@@ -79,6 +79,6 @@ const reverse = (x) => {
 
 ## LANGUAGES:
 
-- Uzbek - Native
-- English - Intermediate
-- Russian - Basic
+- Uzbek 🇺🇿 - Native
+- English 🏴󠁧󠁢󠁥󠁮󠁧󠁿 - Intermediate
+- Russian 🇷🇺 - Basic
