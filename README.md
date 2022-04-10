@@ -1,2 +1,3 @@
-# rsschool-cv
-rsschool-cv
+# Links
+
+https://gulomjonbakirov.github.io/rsschool-cv/cv
