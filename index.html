@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My CV</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,700;1,400;1,700&family=Neucha&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/21a5bcd785.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="navbar__links">
+          <li><a class="navbar__links-link" href="#top">About</a></li>
+          <li><a class="navbar__links-link" href="#education">Education</a></li>
+          <li><a class="navbar__links-link" href="#skills">Skills</a></li>
+          <li>
+            <a class="navbar__links-link" href="#experience">Experience</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="content">
+      <div class="content__title">
+        <img
+          src="./assets//images/avatar.png"
+          alt="avatar"
+          height="100"
+          width="100"
+        />
+        <h1>Bakirov G'ulomjon To'ychiboy o'g'li</h1>
+      </div>
+      <p>
+        Junior Frontend Developer with 5 months in building eccomerse project. I
+        like coding. Skilled mostly in JavaScript , React and Redux. I accept
+        the criticism correctly.
+      </p>
+      <div class="contacts">
+        <ul class="content__technology-links">
+          <li>Phone: <a href="tel:+998990492776">+998990492776</a></li>
+          <li>
+            Email:
+            <a href="mailto:bakirovgulomjon@gmail.com"
+              >bakirovgulomjon@gmail.com</a
+            >
+          </li>
+          <li>
+            Portifolio:
+            <a href="https://gulomjonbakirov.netlify.app/"
+              >https://gulomjonbakirov.netlify.app/</a
+            >
+          </li>
+          <li><a href="https://github.com/GulomjonBakirov">Github</a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/gulomjonbakirov/">Linkedin</a>
+          </li>
+          <li>
+            <a href="https://t.me/bak1roff">Telegram</a>
+          </li>
+        </ul>
+      </div>
+      <blockquote class="blockquote__bordered blockquote__quoted" id="skills">
+        <p class="blockquote_text">Criticism Can Push You to Grow</p>
+      </blockquote>
+      <div>
+        <h2>Skills</h2>
+        <ul class="content__technology-links">
+          <li>HTML</li>
+          <li>
+            CSS
+            <ul class="content__frameworks">
+              <li>Bootstrap</li>
+              <li>SASS</li>
+              <li>Material UI</li>
+              <li>Ant Design</li>
+            </ul>
+          </li>
+          <li>
+            Programming Languages:
+            <ul class="content__frameworks">
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+            </ul>
+          </li>
+          <li>
+            Front End:
+            <ul class="content__frameworks">
+              <li>React</li>
+              <li>Redux</li>
+            </ul>
+          </li>
+          <li>
+            Back End:
+            <ul class="content__frameworks">
+              <li>Node.js</li>
+              <li>Express.js</li>
+            </ul>
+          </li>
+          <li>
+            Database:
+            <ul class="content__frameworks">
+              <li>Mongodb</li>
+              <li>SQLite</li>
+            </ul>
+          </li>
+          <li>
+            Version Control:
+            <ul class="content__frameworks">
+              <li>Git</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <h2>Code Example</h2>
+      <h3><b>Reverse Integer Leetcode</b></h3>
+      <p>
+        Given a signed 32-bit integer x, return x with its digits reversed. If
+        reversing x causes the value to go outside the signed 32-bit integer
+        range [-231, 231 - 1], then return 0.
+      </p>
+      <div class="content__leetcode-container">
+        <pre>
+            <code class="content__leetcode-code" id="education">
+  /**
+ * @param {number} x
+ * @return {number}
+ */
+const reverse = (x) => {
+  if (x < 0) return -1 * reverse(-x);
+  const solution = (x + "").split("").reverse().join("");
+  return( solution > 2 ** 31 - 1) ? 0 : solution;
+};
+            </code>
+            </pre>
+      </div>
+
+      <h2>Education</h2>
+      <h3>
+        Tashkent University of Information and Technologies -
+        <i>Tashkent, </i> 🇺🇿<i> (September, 2019 - Current)</i>
+      </h3>
+      <p>Bachelor of Computer Engineering</p>
+      <h3>
+        TSTU Academic Lyceum of Computer Technologies -
+        <i>Tashkent, </i> 🇺🇿<i> (September, 2017 - June, 2019)</i>
+      </h3>
+      <p>Exact Science</p>
+      <h2>Courses</h2>
+      <h3 id="experience">
+        PDP - <i>Tashkent, </i> 🇺🇿<i> (February, 2021 - March, 2021)</i>
+      </h3>
+      <p>React / Redux</p>
+
+      <h2>Experience</h2>
+      <h3>
+        IDGroup -
+        <i>Khorazm, </i> 🇺🇿<i> (September, 2021 - January, 2022)</i>
+      </h3>
+      <p>Front End Developer (remote)</p>
+      <ul class="content__technology-links content__frameworks">
+        <li>Made website of ministry for educational purpose</li>
+        <li>Made simple design (with Ant Design)</li>
+        <li>Use Redux for fetching data</li>
+      </ul>
+      <h2>Languages I Speak</h2>
+      <h3>Uzbek 🇺🇿</h3>
+      <p>Level: Native</p>
+      <h3>English 🏴󠁧󠁢󠁥󠁮󠁧󠁿</h3>
+      <p>Level: Intermediate</p>
+      <h3>Russian 🇷🇺</h3>
+      <p>Level: Basic</p>
+      <p></p>
+    </main>
+    <footer class="footer">
+      <a href="https://rs.school/js/">
+        <img
+          class="footer__image"
+          src="https://rs.school/images/rs_school_js.svg"
+          alt="rsschool logo"
+          width="50"
+      /></a>
+      <a href="https://github.com/GulomjonBakirov"
+        ><i class="fab fa-github"></i
+      ></a>
+      <a href="https://www.linkedin.com/in/GulomjonBakirov"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+      <span style="color: white">2022.04.10</span>
+    </footer>
+  </body>
+</html>
